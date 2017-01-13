@@ -1,0 +1,75 @@
+@import 'bootstrap';
+$font-color-g1:green;
+$font-color-g2:greenyellow;
+$font-color-g3:lawngreen;
+$font-color-g4:#95BC01; 
+$font-color-w1:White;
+$font-color-b:black;
+$width-value1:3px;
+body
+{
+    background-color:$font-color-g4; 
+}
+h5,
+.container-decoration,
+.button-decoration
+{
+color: $font-color-w1;
+background-color:$font-color-g1;
+border:none;
+}
+h3,
+.list-text,
+::-moz-placeholder 
+{
+
+color: $font-color-w1!important;
+}
+.head-colour
+{
+    color: $font-color-w1 !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+
+}
+.label-body
+{
+ border
+ {
+     color:$font-color-w1;
+     style: solid;
+     width: $width-value1 $width-value1 $width-value1 $width-value1;
+ }   
+ color:black !important;
+ background-color:$font-color-w1;
+ font-family: Arial;
+}
+.label-no-border
+{
+    color: $font-color-w1 !important;
+    font-size: 75px;
+}
+.button-decoration-browse
+{
+    background-color:$font-color-g2;
+    border:none;
+    color: $font-color-g1 !important;
+      float:right;
+}
+.Submit-decoration
+{
+    background-color:$font-color-g3;
+    border:none;
+    color: $font-color-w1 !important;
+    align-items: right;
+    float:right;
+}
+.text-decoration
+{
+    background:$font-color-g2;
+    
+}
+.paragraph-decoration
+{
+   font-size:15px !important;
+   font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}

@@ -1,0 +1,46 @@
+.container-decoration
+{
+    
+    border:1px solid 450px;
+    margin-top:5px; 
+}
+ form {
+   
+    text-align: center;
+    }
+body
+{
+    background-image:url(images.jpg);
+}
+h1
+{
+text-align: center;
+color:blueviolet;
+}
+.button-row
+{
+    align-items: center;
+}
+input[type="button"],
+input[type="reset"]
+
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    width:100px;
+   
+}
+.label-dec
+{
+    color: red;
+}
+.container-decoration
+{
+   align-content: center;
+}
+h3
+{
+
+color:antiquewhite;
+}
+

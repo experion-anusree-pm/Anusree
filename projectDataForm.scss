@@ -1,0 +1,34 @@
+$font-color1:blueviolet;
+$size1:5px;
+.container-decoration
+{
+    
+    border:1px solid 90*$size1;
+    margin-top:$size1; 
+}
+ form {
+   
+    text-align: center;
+    }
+body
+{
+    background-image:url(images.jpg);
+}
+h3
+{
+text-align: center;
+color:$font-color1;
+}
+.button-row
+{
+    align-items: center;
+}
+input[type="button"],
+input[type="reset"]
+
+{
+    margin-left: $size1*4;
+    margin-right: $size1*4;
+    width:$size1*20;
+   
+}

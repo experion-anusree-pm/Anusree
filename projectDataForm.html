@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Project Data Form</title>
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="projectdataForm.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+	<script src="projectData.js"></script>
+</head>
+<!--Body Starts Here-->
+
+<body>
+	<div class="container">
+		<h1>WELCOME TO infoPROJECT</h1>
+		<div class="row">
+			<h3>ENTER PROJECT DETAILS HERE</h3>
+			<br>
+		</div>
+		<!--Form Starts Here-->
+		<form id="frmProjectData" name="frmProjectData" action="projectDataReport.html" class="form-horizontal">
+			<!--New Row started-->
+			<div class=row>
+				<!--First column started-->
+				<div class="col-xs-12 col-lg-6 col-sm-6">
+
+					<div class="form-group row">
+						<label for="Project Name" name="projectName" class="control-label col-xs-5 col-lg-4 col-sm-4">Project Name *</label>
+						<div class="col-xs-7 col-lg-8 col-sm-8">
+							<input type="text" name="txtProjectName" id="txtProjectName" class="form-control" id="txtProjectName" placeholder="Project Name"
+								required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="Project Code" name="ProjectCode" id="ProjectCode" class="control-label col-xs-5 col-lg-4 col-sm-4">Project Code *</label>
+						<div class="col-xs-7 col-lg-8 col-sm-8">
+							<input type="text" name="txtprojectCode" id="txtprojectCode" class="form-control" placeholder="Project Code" required>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="Project Code" name="Project Manager" id="projectManager" class="control-label col-xs-5 col-lg-4 col-sm-4">Project Manager *</label>
+						<div class="col-xs-7 col-lg-8 col-sm-8">
+							<input type="text" name="txtprojectManager" id="txtprojectManager" class="form-control" placeholder="Project Manager" required>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="Customer" name="lblCustomer" id="lblCustomer" class="control-label col-xs-5 col-lg-4 col-sm-4">Customer *</label>
+						<div class="col-xs-7 col-lg-8 col-sm-8">
+							<select class="mlist col-xs-6" id="customer" name="customer">
+                                  <option value="codeobjectUSD" data-value="CodeObjects">CodeObjects</option>
+                                  <option value="regusINR" data-value="Regus">Regus</option>
+                                  <option value="trlGBP" data-value="TRL">TRL</option>
+                                  <option value="worldsmartAUD" data-value="WorldSmart">Worldsmart</option>
+                              </select>
+						</div>
+					</div>
+
+
+					<div class="form-group row">
+						<label for=" Currency" name="Currency" id="lblCurrency" class="control-label col-xs-5 col-lg-4 col-sm-4">Currency *</label>
+						<div class="col-xs-7 col-lg-8 col-sm-8">
+							<select class="mlist col-xs-6" id="currency" name="currency">
+                                  <option value="codeobjectUSD" data-value="USD">USD</option>
+                                  <option value="regusINR" data-value="INR">INR</option>
+                                  <option value="trlGBP" data-value="GBP">GBP</option>
+                                  <option value="worldsmartAUD" data-value="AUD">AUD</option>
+                              </select>
+						</div>
+					</div>
+
+
+
+				</div>
+				<!--First column Ends-->
+				<!--Second Column Starts-->
+				<div class="col-xs-12 col-lg-6 col-sm-6">
+					<div class="form-group row">
+						<label for="Type" id="lblType" class="control-label col-xs-5 col-lg-4 col-sm-4">Type *</label>
+						<div class="col-xs-7 col-lg-8 col-sm-8">
+							<input type="radio" id="type" name="type" value="FixedFee">Fixed Fee
+							<input type="radio" id="type" name="type" value="tm">T and M
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="Project Start Date" name="ProjectStartDate" id="ProjectStartDate" class="control-label col-xs-5 col-lg-4 col-sm-4">Project Start Date *</label>
+						<div class="col-xs-7 col-lg-8 col-sm-8">
+							<input type="text" name="txtProjectStartDate" id="txtProjectStartDate" class="form-control datePicker" readonly="readonly"
+								placeholder="Project Start Date" required>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for="Project Closure Date" name="ProjectClosureDate" id="projectManager" class="control-label col-xs-5 col-lg-4 col-sm-4">Project Closure Date</label>
+						<div class="col-xs-7 col-lg-8 col-sm-8">
+							<input type="text" name="txtProjectClosureDate" id="txtProjectClosureDate" class="form-control datePicker" readonly="readonly"
+								placeholder="Project Closure Date" required>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<label for=" Project Status" name="ProjectStatus" id="lblProjectStatus" class="control-label col-xs-5 col-lg-4 col-sm-4">Project Status *</label>
+						<div class="col-xs-7 col-lg-8 col-sm-8">
+							<select class="mlist col-xs-6" id="projectStatus" name="projectStatus">
+                                  <option value="pastDate" data-value="InProgress">In Progress</option>
+                                  <option value="futureDate" data-value="YetToStart">Yet To Start</option>
+                                  <option value="pastDate" data-value="OnHold">On Hold</option>
+                                  <option value="pastDate" data-value="Closed">Closed</option>
+                              </select>
+						</div>
+					</div>
+
+				</div>
+				<!--Second column Ends-->
+			</div>
+			<!--New Row end-->
+			<!--Button Raw Starts-->
+			<div class="row button-row">
+				<div class="col-sm-12 col-xs-12">
+					<input type="submit" id="btnSubmit" name="btnSubmit" class="  btn btn-primary" onclick value="SUBMIT">
+					<input type="reset" id="btnReset" class=" btn btn-primary" value="RESET">
+
+				</div>
+				<!--Button Raw Ends-->
+		</form>
+		<!--Form Ends Here-->
+		</div>
+</body>
+<!--Body Ends Here-->
+
+</html>
